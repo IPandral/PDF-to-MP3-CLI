@@ -2,6 +2,8 @@
 
 This repository contains a Python script that converts the text content of a PDF file into an MP3 file. This can be particularly useful for students or anyone who prefers to listen to text rather than read it, such as people with visual impairments or those who want to consume content while doing other tasks.
 
+I personally created this application to turm my university assigment PDF into voice as i find it easier to understand.
+
 ## How it works
 
 The script uses the PyPDF2 library to extract text from the PDF files and the pyttsx3 library to convert the extracted text into speech. The speech is then saved as an MP3 file. In addition, a transcript of the text is saved as a .txt file.

@@ -1,18 +1,20 @@
-# PDF to MP3
+# PDF to MP3 CLI
 
-This repository contains a Python script that converts the text content of a PDF file into an MP3 file. This can be particularly useful for students or anyone who prefers to listen to text rather than read it, such as people with visual impairments or those who want to consume content while doing other tasks.
+This repository contains a Python script for a command-line interface (CLI) application that converts the text content of a PDF file into an MP3 file. It's suitable for users who are comfortable with command-line operations and scripting.
 
-I personally created this application to turn my university assigment PDF into voice as i find it easier to understand.
+The CLI version is ideal for batch processing and can be easily integrated into other software workflows.
 
-## How it works
+## How it Works
 
-The script uses the PyPDF2 library to extract text from the PDF files and the pyttsx3 library to convert the extracted text into speech. The speech is then saved as an MP3 file. In addition, a transcript of the text is saved as a .txt file.
+The script uses the `PyPDF2` library to extract text from PDF files and the `pyttsx3` library to convert the extracted text into speech. The speech is then saved as an MP3 file, and a transcript of the text is saved as a `.txt` file.
 
 ## Usage
 
+To use the script:
+
 1. Place your PDF files in the `input` directory.
-2. Run the `app.py` script.
-3. The script will create a separate folder for each PDF file in the `output` directory. Each folder will contain an MP3 file and a .txt transcript file.
+2. Run the `app.py` script from the command line.
+3. The script will create a separate folder for each PDF file in the `output` directory, containing both an MP3 file and a transcript.
 
 ## Requirements
 
@@ -20,7 +22,7 @@ The script uses the PyPDF2 library to extract text from the PDF files and the py
 - PyPDF2
 - pyttsx3
 
-You can install the required Python libraries using pip:
+Install the necessary libraries with pip:
 
 ```bash
 pip install PyPDF2 pyttsx3
@@ -28,4 +30,8 @@ pip install PyPDF2 pyttsx3
 
 ## License
 
-This project is licensed under the terms of the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is open-source and available under the MIT License.
+
+---
+
+For those preferring a graphical interface, check out the [PDF-to-MP3-UI](https://github.com/IPandral/PDF-to-MP3-UI) repository, which provides a user-friendly interface for converting PDFs to MP3 files.
